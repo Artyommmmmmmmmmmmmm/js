@@ -1,3 +1,3 @@
 function NullObject(key){
-    const key = {} 
+    return Object.create(null)
 }

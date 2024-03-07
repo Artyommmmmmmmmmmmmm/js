@@ -11,21 +11,17 @@ function Electric(){
     };
 };
 
-function Fridge(){
-    Electric.call(this);
-    this.tempetature = '10';
-
-    this.setTemperature = function(temp){
-        this.temperature = temp
-    };
+fridge = new Electric();
+fridge.temperature = '10';
+fridge.setTemperature = function(temp){
+    fridge.temperature = temp
 };
-function Microwave(){
-    Electric.call(this);
-    this.power = '700';
 
-    this.setTemperature = function(pow){
-        this.power = pow
-    };
+microwave = new Electric();
+microwave.power = '700';
+microwave.setPower = function(pow){
+    microwave.power = pow
 };
+
 
 
